@@ -1,0 +1,383 @@
+<resources>
+
+    <!--///////////////////////////////////////////////-->
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="CustomTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Change text color for edit text. This will also be the color of the cursor -->
+        <item name="android:textColor">@color/colorWhite</item>
+
+        <!-- Change hint text color for edit text -->
+        <item name="android:textColorHint">@color/secondary_text</item>
+
+        <!-- Hint for edit text -->
+
+        <item name="android:checkboxStyle">@style/checkBoxStyle</item>
+
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+
+        <item name="android:popupMenuStyle">@style/MyPopupTheme</item>
+
+        <item name="colorControlNormal">@color/colorDarkGrey</item>
+
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme2" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Change text color for edit text. This will also be the color of the cursor -->
+        <item name="android:textColor">@color/colorWhite</item>
+
+        <!-- Change hint text color for edit text -->
+        <item name="android:textColorHint">@color/secondary_text</item>
+
+        <!-- Hint for edit text -->
+
+        <item name="android:checkboxStyle">@style/checkBoxStyle</item>
+
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+
+        <item name="android:popupMenuStyle">@style/MyPopupTheme</item>
+
+        <item name="colorControlNormal">@color/colorDarkGrey</item>
+
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppBarTheme" parent="AppTheme.Base">
+        <item name="colorPrimaryDark">@color/my_primary_700</item>
+        <item name="colorPrimary">@color/my_primary_500</item>
+    </style>
+
+    <style name="AppTheme.Toolbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="color">@color/colorWhite</item>
+        <item name="android:textColorPrimary">@color/colorWhite</item>
+        <!-- Used to for the title of the Toolbar when parent is Theme.AppCompat.Light -->
+        <item name="android:textColorPrimaryInverse">@color/colorWhite</item>
+        <!-- Used to color the text of the action menu icons -->
+        <item name="android:textColorSecondary">@color/colorWhite</item>
+        <!-- Used to color the overflow menu icon -->
+        <item name="actionMenuTextColor">@color/colorWhite</item>
+        <!-- Color of the Toolbar -->
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Set AppCompat's color theming attrs -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="MyPopupTheme" />
+
+    <style name="AppTheme.Toolbar.Overflow" parent="ThemeOverlay.AppCompat.Light">
+
+    </style>
+
+    <style name="MapMarkerText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+
+    <style name="InputLayout" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textColorHint">@color/colorGrey</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorGrey</item>
+        <item name="colorControlActivated">@color/colorWhite</item>
+    </style>
+
+    <!-- New chat dialog -->
+    <style name="myDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/my_accent_500</item>
+    </style>
+
+    <style name="myTextInputDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/my_accent_500</item>
+        <item name="colorPrimary">@color/my_primary_500</item>
+    </style>
+    <!-- End new chat dialog -->
+
+    <!-- Define your custom dialog theme here extending from base -->
+    <style name="AppDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Define color properties as desired -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:textColorHighlight">@color/my_primary_200</item>
+        <item name="colorAccent">@color/my_accent_500</item>
+        <item name="colorControlNormal">@color/my_accent_700</item>
+        <!-- Define window properties as desired -->
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/my_primary_200</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <!-- Define your custom alert theme here extending from base -->
+    <style name="AppAlertTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+        <item name="android:textColorHighlight">@color/colorGrey</item>
+    </style>
+
+    <style name="Dialog.FullScreen" parent="Theme.AppCompat.Dialog">
+        <item name="android:padding">0dp</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="ToolbarTheme">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:windowBackground">@color/colorPrimaryDark</item>
+    </style>
+
+    <!--///////////////////////////////////////////////-->
+
+    <style name="DirectionalTextViewMainText">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="android:textStyle">bold</item>
+        <!--<item name="android:lineSpacingExtra">-10dp</item>-->
+        <!--<item name="android:drawableEnd">@drawable/white_line</item>-->
+        <item name="android:paddingLeft">26dp</item>
+        <item name="android:paddingRight">26dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <!--<item name="android:background">#33ffffff</item>-->
+    </style>
+
+    <style name="spinnerStyle" parent="Base.Widget.AppCompat.Spinner">
+        <item name="android:spinnerDropDownItemStyle">@style/spinnerDropDownStyle</item>
+        <item name="android:spinnerItemStyle">@style/spinnerItemStyle</item>
+    </style>
+
+    <style name="spinnerDropDownStyle">
+        <item name="android:background">@color/md_grey_200</item>
+    </style>
+
+    <style name="spinnerItemStyle">
+        <item name="android:textColor">@color/colorLightDarkText</item>
+    </style>
+
+    <style name="CustomTheme" parent="MaterialDrawerTheme.TranslucentStatus">
+        <!-- ...and here we setting appcompat’s color theme attrs -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- MaterialDrawer specific values -->
+        <item name="material_drawer_background">@color/my_primary_500</item>
+        <item name="material_drawer_primary_text">@color/colorWhite</item>
+        <item name="material_drawer_secondary_text">@color/colorLightDarkText</item>
+        <item name="material_drawer_hint_text">@color/material_drawer_dark_hint_text</item>
+        <item name="material_drawer_divider">@color/colorGrey</item>
+        <item name="material_drawer_selected">@color/material_drawer_dark_selected</item>
+        <item name="material_drawer_selected_text">@color/my_accent_200</item>
+        <item name="material_drawer_header_selection_text">@color/material_drawer_dark_primary_text</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+        <!-- CAB :D
+        <item name="windowActionModeOverlay">true</item>
+        -->
+    </style>
+
+    <style name="Widget.Button.Toggle" parent="android:Widget">
+        <item name="android:background">@color/colorDarkGrey</item>
+        <item name="android:textOn">On</item>
+        <item name="android:textOff">Off</item>
+        <item name="android:disabledAlpha">?android:attr/disabledAlpha</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus"></style>
+
+    <style name="head_default">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/height_100px</item>
+    </style>
+
+    <style name="message_divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.3dp</item>
+        <item name="android:background">@color/my_accent_100</item>
+    </style>
+
+    <style name="text_default">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/my_primary_400</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <!--
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@color/colorDarkGrey</item>
+    </style>
+
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@color/colorDarkGrey</item>
+    </style>
+    -->
+
+    <!-- TEXT STYLES -->
+    <style name="QTitle" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/titleCellColor</item>
+    </style>
+
+    <style name="QTitleMedium" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/titleCellColor</item>
+    </style>
+
+    <style name="QTitleWhite" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="QTitleMediumWhite" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="QTitleLarge" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">@color/titleCellColor</item>
+    </style>
+
+    <style name="QTitleLargeWhite" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="QTitlePrimary" parent="QTitle">
+        <item name="android:textColor">@color/my_primary_900</item>
+    </style>
+
+    <style name="QTitleItalic" parent="QTitle">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="QTitleMediumPrimary" parent="QTitleMedium">
+        <item name="android:textColor">@color/my_primary_900</item>
+    </style>
+
+    <style name="QTitleLight" parent="QTitle">
+        <item name="android:textColor">@color/titleCellColorLight</item>
+    </style>
+
+    <style name="QTitleMain" parent="QTitleMedium">
+        <item name="android:textColor">@color/my_accent_400</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="QTitleLightMedium" parent="QTitleMedium">
+        <item name="android:textColor">@color/titleCellColorLight</item>
+    </style>
+
+
+    <style name="QText" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/valueCellColor</item>
+        <item name="android:textColorHint">@color/valueHintColor</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="QTextMedium" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/valueCellColor</item>
+        <item name="android:textColorHint">@color/valueHintColor</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="QTextLight" parent="QText">
+        <item name="android:textColor">@color/valueCellColorLight</item>
+    </style>
+
+    <style name="QTextLightMedium" parent="QTextMedium">
+        <item name="android:textColor">@color/valueCellColorLight</item>
+    </style>
+
+    <!-- END TEXT STYLES -->
+
+
+
+
+    <style name="checkBoxStyle" parent="android:Widget.CompoundButton.CheckBox">
+        <item name="android:colorBackground">@color/colorWhite</item>
+    </style>
+
+    <style name="TextViewStyle">
+        <item name="android:textColor">@color/my_primary_50</item>
+    </style>
+
+    <style name="ProgressBar" parent="@android:style/Widget.ProgressBar">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@color/my_accent_50</item>
+    </style>
+
+    <!--Toolbar customization-->
+    <style name="MyToolbarStyle" parent="AppTheme.Toolbar">
+        <item name="android:background">@color/primary</item>
+        <item name="popupTheme">@style/MyPopupTheme</item>
+        <!-- No need for colorPrimary, colorPrimaryDark, colorAccent here
+             this should go to the AppTheme -->
+    </style>
+    <!--End Toolbar customization-->
+
+    <style name="Custom" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">@string/working_text</item>
+        <item name="DialogSpotColor">@color/colorAccent</item>
+        <item name="DialogSpotCount">4</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorGrey</item>
+        <item name="android:topRightRadius">10dp</item>
+        <item name="android:background">@drawable/dialog_bg</item>
+    </style>
+
+    <style name="MyPopupTheme" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:textColorPrimary">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:colorBackground">@color/my_primary_400</item>
+    </style>
+
+    <style name="normalText" parent="@android:style/TextAppearance">
+        <item name="android:textSize">19sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/my_primary_600</item>
+    </style>
+
+    <style name="blinkText" parent="normalText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+
+    <string name="working_text">Working...</string>
+</resources>

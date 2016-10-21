@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:id="@+id/nsvContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@color/colorLightestGrey">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:background="@color/colorLightestGrey">
+
+        <ProgressBar
+            android:id="@+id/loadingProgressBar"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lyImage"
+            android:layout_below="@+id/loadingProgressBar">
+            <ImageView
+                android:id="@+id/ivWeather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:contentDescription="@string/weather_image" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lyCountryName"
+            android:layout_below="@+id/lyImage"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_small_margin"
+                android:layout_weight="1"
+                android:text="@string/country_name_text"
+                android:id="@+id/tvCountryNameTitle"
+                style="@style/QTitleMedium"
+                android:gravity="end|center_vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_small_margin"
+                android:layout_weight="1"
+                android:id="@+id/tvCountryName"
+                android:gravity="start|center_vertical"
+                style="@style/QTitleMediumPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lyCountryCode"
+            android:layout_below="@+id/lyCountryName"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_small_margin"
+                android:layout_weight="1"
+                android:text="@string/country_code_text"
+                android:id="@+id/tvCountryCodeTitle"
+                style="@style/QTitleMedium"
+                android:gravity="end|center_vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_small_margin"
+                android:layout_weight="1"
+                android:id="@+id/tvCountryCode"
+                android:gravity="start|center_vertical"
+                style="@style/QTitleMediumPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lyLocationName"
+            android:layout_below="@+id/lyCountryCode"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_small_margin"
+                android:layout_weight="1"
+                android:text="@string/station_name_text"
+                android:id="@+id/tvLocationNameTitle"
+                style="@style/QTitleMedium"
+                android:gravity="end|center_vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_small_margin"
+                android:layout_weight="1"
+                android:id="@+id/tvLocationName"
+                android:gravity="start|center_vertical"
+                style="@style/QTitleMediumPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lyTemperature"
+            android:layout_below="@+id/lyLocationName"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_small_margin"
+                android:layout_weight="1"
+                android:text="@string/temperature_text"
+                android:id="@+id/tvTemperatureTitle"
+                style="@style/QTitleMedium"
+                android:gravity="end|center_vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_small_margin"
+                android:layout_weight="1"
+                android:id="@+id/tvTemperature"
+                android:gravity="start|center_vertical"
+                style="@style/QTitleMediumPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lyWindDirection"
+            android:layout_below="@+id/lyTemperature"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_small_margin"
+                android:layout_weight="1"
+                android:text="@string/wind_direction_text"
+                android:id="@+id/tvWindDirectionTitle"
+                style="@style/QTitleMedium"
+                android:gravity="end|center_vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_small_margin"
+                android:layout_weight="1"
+                android:id="@+id/tvWindDirection"
+                android:gravity="start|center_vertical"
+                style="@style/QTitleMediumPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lyWindSpeed"
+            android:layout_below="@+id/lyWindDirection"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_small_margin"
+                android:layout_weight="1"
+                android:text="@string/wind_speed_text"
+                android:id="@+id/tvWindSpeedTitle"
+                style="@style/QTitleMedium"
+                android:gravity="end|center_vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_small_margin"
+                android:layout_weight="1"
+                android:id="@+id/tvWindSpeed"
+                android:gravity="start|center_vertical"
+                style="@style/QTitleMediumPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lyClouds"
+            android:layout_below="@+id/lyWindSpeed"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_small_margin"
+                android:layout_weight="1"
+                android:text="@string/cloud_cover_text"
+                android:id="@+id/tvCloudsTitle"
+                style="@style/QTitleMedium"
+                android:gravity="end|center_vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_small_margin"
+                android:layout_weight="1"
+                android:id="@+id/tvClouds"
+                android:gravity="start|center_vertical"
+                style="@style/QTitleMediumPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lyHumidity"
+            android:layout_below="@+id/lyClouds"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_small_margin"
+                android:layout_weight="1"
+                android:text="@string/humidity_text"
+                android:id="@+id/tvHumidityTitle"
+                style="@style/QTitleMedium"
+                android:gravity="end|center_vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_small_margin"
+                android:layout_weight="1"
+                android:id="@+id/tvHumidity"
+                android:gravity="start|center_vertical"
+                style="@style/QTitleMediumPrimary" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvNoResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/size_word"
+            android:text="@string/no_data_text"
+            android:textColor="@color/colorAccent"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

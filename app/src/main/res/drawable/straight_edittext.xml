@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="@dimen/form_text_fields_height">
+<gradient
+    android:endColor="@color/colorWhite"
+    android:centerColor="@color/colorWhite"
+    android:startColor="@color/colorWhite"
+    android:angle="270" />
+    <!-- view border color and width -->
+<stroke
+        android:width="1dp"
+        android:color="@color/md_grey_200">
+    </stroke>
+<corners
+    android:radius="50dp"/>
+
+</shape>

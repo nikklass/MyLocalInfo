@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'release'
+
+dependencies {
+    compile 'com.joanzapata.iconify:android-iconify:2.2.2'
+}
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '19.1.0'
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src/main/java']
+            res.srcDirs = ['res']
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_6
+        targetCompatibility JavaVersion.VERSION_1_6
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+task apklib(type: Zip) {
+    appendix = extension = 'apklib'
+
+    from 'AndroidManifest.xml'
+    into('res') {
+        from 'res'
+    }
+    into('src') {
+        from 'src/main/java'
+    }
+}
+
+artifacts {
+    archives apklib
+}

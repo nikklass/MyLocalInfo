@@ -1,0 +1,14 @@
+int attr prefixColor 0x7f010002
+int attr prefixIcon 0x7f010000
+int attr prefixText 0x7f010001
+int attr suffixColor 0x7f010005
+int attr suffixIcon 0x7f010003
+int attr suffixText 0x7f010004
+int style enhancedEditText 0x7f020000
+int[] styleable EnhancedEditText { 0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003, 0x7f010004, 0x7f010005 }
+int styleable EnhancedEditText_prefixColor 2
+int styleable EnhancedEditText_prefixIcon 0
+int styleable EnhancedEditText_prefixText 1
+int styleable EnhancedEditText_suffixColor 5
+int styleable EnhancedEditText_suffixIcon 3
+int styleable EnhancedEditText_suffixText 4

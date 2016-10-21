@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "226432067738",
+    "firebase_url": "https://pendoschools.firebaseio.com",
+    "project_id": "pendoschools",
+    "storage_bucket": "pendoschools.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226432067738:android:a3642c6de74aee7a",
+        "android_client_info": {
+          "package_name": "ke.co.heavybit.pendo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226432067738-n96bnk1ke9u0ttbsibedgj5n095ukaub.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ke.co.heavybit.pendo",
+            "certificate_hash": "3DBB14D824915079BC7BFC49274E6936B3F58A3A"
+          }
+        },
+        {
+          "client_id": "226432067738-j969ri58js62ml60a3j4ga5p03bou2ru.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "226432067738-dfdotnmrt7pprp8ou885d6uenh187mvk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDobP8AeBraomL2hhtz7Zw_YZmRcSD-wQM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-76161164-2"
+          }
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226432067738-j969ri58js62ml60a3j4ga5p03bou2ru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226432067738:android:80b2c4c61e95cea9",
+        "android_client_info": {
+          "package_name": "ke.co.heavybit.mylocalinfo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226432067738-j969ri58js62ml60a3j4ga5p03bou2ru.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "226432067738-dfdotnmrt7pprp8ou885d6uenh187mvk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDobP8AeBraomL2hhtz7Zw_YZmRcSD-wQM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

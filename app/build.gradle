@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.3"
+
+    defaultConfig {
+        applicationId "ke.co.heavybit.mylocalinfo"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+
+    //enhanced edittext
+    compile project(':enhanced-edittext')
+
+    compile('com.mikepenz:materialdrawer:5.1.0@aar') {
+        transitive = true
+    }
+    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.android.support:recyclerview-v7:24.1.1'
+    compile 'com.android.support:cardview-v7:24.1.1'
+    compile 'com.android.support:design:24.1.1'
+    compile 'com.mcxiaoke.volley:library-aar:1.0.0'
+    compile 'com.joanzapata.iconify:android-iconify-weathericons:2.2.2' // (v2.0)
+    compile 'com.joanzapata.iconify:android-iconify-fontawesome:2.2.2' // (v4.5)
+    //compile 'cn.pedant.sweetalert:library:1.3'
+    compile 'com.github.d-max:spots-dialog:0.4@aar'
+    //compile 'com.yarolegovich:lovely-dialog:1.0.2'
+
+    compile 'com.mikepenz:google-material-typeface:2.2.0.1.original@aar'
+    compile 'com.mikepenz:fontawesome-typeface:4.4.0.1@aar'
+    compile 'com.mikepenz:itemanimators:0.2.2@aar'
+    compile 'com.mikepenz:crossfader:1.3.4@aar'
+    compile 'com.mikepenz:crossfadedrawerlayout:0.3.2@aar'
+
+    compile 'com.google.firebase:firebase-core:9.4.0'
+    compile 'com.google.firebase:firebase-crash:9.4.0'
+    compile 'com.google.firebase:firebase-analytics:9.4.0'
+
+    compile 'com.google.android.gms:play-services-maps:9.4.0'
+    compile 'com.google.android.gms:play-services-location:9.4.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

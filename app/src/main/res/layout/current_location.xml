@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+     Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!-- This can go anywhere in your layout (see other demos for some examples). -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:enhancededittext="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout">
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/lySearch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/form_text_fields_height"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:alpha="0.85"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/activity_vertical_small_margin"
+        android:orientation="horizontal">```````````````
+
+        <android.widget.EnhancedEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/etSearch"
+            android:hint="@string/search_location"
+            android:singleLine="true"
+            android:textColorHint="@color/valueCellColorLight"
+            android:background="@drawable/straight_edittext"
+            android:padding="@dimen/form_fields_padding"
+            enhancededittext:prefixIcon="fa-search"
+            enhancededittext:prefixColor="@color/iconsColor"
+            style="@style/QTextLight"/>
+
+        <Button
+            android:id="@+id/btSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/form_fields_padding"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginStart="@dimen/activity_vertical_margin"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_dark_button"
+            android:text="@string/search" />
+
+    </LinearLayout>
+
+</FrameLayout>

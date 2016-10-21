@@ -1,0 +1,28 @@
+[
+    {
+        "outputFile": "C:\\datas\\android_new\\mylocalinfo\\enhanced-edittext\\build\\intermediates\\res\\merged\\release\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 459,
+                    "endLine": 6,
+                    "endColumn": 12,
+                    "endOffset": 642
+                },
+                "from": {
+                    "file": "C:\\datas\\android_new\\mylocalinfo\\enhanced-edittext\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 86,
+                        "endLine": 7,
+                        "endColumn": 12,
+                        "endOffset": 269
+                    }
+                }
+            }
+        ]
+    }
+]
